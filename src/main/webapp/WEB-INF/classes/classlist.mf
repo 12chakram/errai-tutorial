@@ -1,0 +1,16 @@
+org.jboss.errai.demo.client.local.ComplaintForm
+org.jboss.errai.demo.client.local.App
+org.jboss.errai.demo.server.UserComplaintService
+org.jboss.errai.demo.server.UserComplaintEndpointImpl
+org.jboss.errai.demo.client.local.Login
+org.jboss.errai.demo.client.local.Config
+org.jboss.errai.demo.client.shared.UserComplaint
+org.jboss.errai.demo.client.local.ComplaintListItemWidget
+org.jboss.errai.demo.client.local.ComplaintSubmitted
+org.jboss.errai.demo.client.local.Admin
+org.jboss.errai.demo.server.LoginEndpointImpl
+org.jboss.errai.demo.server.DataSyncServiceImpl
+org.jboss.errai.demo.client.local.Dashboard
+org.jboss.errai.demo.client.shared.User
+org.jboss.errai.demo.client.shared.UserComplaintEndpoint
+org.jboss.errai.demo.client.shared.LoginEndpoint
