@@ -9,18 +9,52 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<link href="<%=contextPath%>/bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="<%=contextPath%>/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 <link href="<%=contextPath%>/css/application.css" rel="stylesheet">
 
-<link href='http://fonts.googleapis.com/css?family=Gudea:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 
-<link rel="shortcut icon" href="<%=contextPath%>/favicon.ico">
-<link rel="apple-touch-icon" href="<%=contextPath%>/favicon.ico">
+<link href="<%=contextPath%>/assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="<%=contextPath%>/assets/css/font-awesome.min.css" rel="stylesheet">
 
-<link rel="apple-touch-icon" sizes="72x72" href="<%=contextPath%>/images/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="<%=contextPath%>/images/apple-touch-icon-114x114.png">
+<link href="<%=contextPath%>/assets/css/ace-fonts.css" rel="stylesheet">
+<link href="<%=contextPath%>/assets/css/ace.min.css" rel="stylesheet">
+
+
+<link href="<%=contextPath%>/assets/css/ace-rtl.min.css" rel="stylesheet">
+<link href="<%=contextPath%>/assets/css/ace.onpage-help.css" rel="stylesheet">
+
+
+
+<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='<%=contextPath%>/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		
+<script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/bootstrap.min.js"></script>		
+
+<script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/fuelux/fuelux.wizard.min.js"></script>
+
+<script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/jquery.validate.min.js"></script>
+
+<script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/additional-methods.min.js"></script>
+
+<script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/bootbox.min.js"></script>
+
+<script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/jquery.maskedinput.min.js"></script>
+
+<script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/select2.min.js"></script>
+
+<script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/bootbox.min.js"></script>
+
+
+<script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/ace-elements.min.js"></script>
+
+<script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/ace.min.js"></script>
+
+<script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/ace.min.js"></script>
+
+<script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/app/common.js"></script>
+
+
 
 <script type="text/javascript" language="javascript" src="<%=contextPath%>/app/app.nocache.js"></script>
 </head>
