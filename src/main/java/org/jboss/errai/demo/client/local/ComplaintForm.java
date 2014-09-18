@@ -40,7 +40,7 @@ import com.googlecode.gwtphonegap.client.camera.PictureOptions;
  * specified role (DefaultPage.class) make this page appear by default when the
  * application is started.
  */
-@Page(role = DefaultPage.class)
+@Page
 @Templated("ComplaintForm.html#app-template")
 public class ComplaintForm extends Composite {
 

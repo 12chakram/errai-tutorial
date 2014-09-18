@@ -2,13 +2,14 @@ package org.jboss.errai.demo.client.local;
 
 import javax.inject.Inject;
 
+import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.NotEmpty;
 import org.jboss.errai.common.client.api.Caller;
 import org.jboss.errai.demo.client.shared.LoginEndpoint;
 import org.jboss.errai.demo.client.shared.User;
 import org.jboss.errai.demo.client.shared.UserComplaint;
 import org.jboss.errai.demo.client.shared.UserComplaintEndpoint;
 import org.jboss.errai.enterprise.client.jaxrs.api.ResponseCallback;
-import org.jboss.errai.ui.client.widget.ValueImage;
 import org.jboss.errai.ui.nav.client.local.DefaultPage;
 import org.jboss.errai.ui.nav.client.local.Page;
 import org.jboss.errai.ui.nav.client.local.TransitionAnchor;
@@ -19,17 +20,13 @@ import org.jboss.errai.ui.shared.api.annotations.EventHandler;
 import org.jboss.errai.ui.shared.api.annotations.Model;
 import org.jboss.errai.ui.shared.api.annotations.Templated;
 
+
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.http.client.Response;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.PasswordTextBox;
-import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.TextBox;
-import com.googlecode.gwtphonegap.client.camera.Camera;
-import com.googlecode.gwtphonegap.client.camera.PictureCallback;
-import com.googlecode.gwtphonegap.client.camera.PictureOptions;
 
 /**
  * This is the companion Java class of the complaint form as specified by
@@ -43,7 +40,7 @@ import com.googlecode.gwtphonegap.client.camera.PictureOptions;
  * specified role (DefaultPage.class) make this page appear by default when the
  * application is started.
  */
-@Page
+@Page(role = DefaultPage.class)
 @Templated("Login.html#app-template")
 public class Login extends Composite {
 
@@ -55,19 +52,29 @@ public class Login extends Composite {
    * "name")
    */
 
-	 @Inject
-	  private TransitionTo<Dashboard> dashboardPage;
+
+ @Inject
+  private TransitionTo<Dashboard> dashboardPage;
 
   @Inject
   @Bound
   @DataField
+  @NotBlank
+  @NotEmpty
   private TextBox username;
 
   @Inject
   @Bound
   @DataField
   private PasswordTextBox password;
-
+  
+  @Inject
+  @DataField
+  private TransitionAnchor<Forgotpassword> forgotpassword;
+  
+  @Inject
+  @DataField
+  private TransitionAnchor<Register> register;
   
   @Inject
   @DataField

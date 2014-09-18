@@ -19,7 +19,7 @@
     <errai.dev.context>${project.artifactId}</errai.dev.context>
     <as.version>8.1.0.Final</as.version>
     <!-- Add the absolute path for $JBOSS_HOME below to manage another instance -->
-    <errai.jboss.home>${project.build.directory}/wildfly-${as.version}</errai.jboss.home>
+    <errai.jboss.home>C:\skymall\Servers\jboss-as-7.1.1.Final</errai.jboss.home>
   </properties>
 
   <dependencyManagement>
@@ -54,6 +54,12 @@
         <artifactId>errai-cdi-jboss</artifactId>
         <version>${errai.version}</version>
       </dependency>
+      
+      <dependency>
+	  <groupId>org.jboss.errai</groupId>
+	  <artifactId>errai-validation</artifactId>
+	  <version>${errai.version}</version>
+	</dependency>
 
     </dependencies>
   </dependencyManagement>
