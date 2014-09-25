@@ -13,7 +13,7 @@
 			if('ontouchstart' in document.documentElement) document.write("<script src='<%=contextPath%>/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 		</script>
 		
-<script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/bootstrap.min.js"></script>		
+<!--<script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/bootstrap.min.js"></script> -->		
 
 <script type="text/javascript" language="javascript" src="<%=contextPath%>/assets/js/fuelux/fuelux.wizard.min.js"></script>
 
